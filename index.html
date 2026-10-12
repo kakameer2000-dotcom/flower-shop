@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دووکانی گوڵ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+            padding: 50px;
+            direction: rtl;
+        }
+        h1 {
+            color: #d81b60;
+            font-size: 48px;
+        }
+        p {
+            color: #555;
+            font-size: 22px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .card {
+            background: white;
+            width: 220px;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .card .flower-img {
+            background: #f8bbd0;
+            height: 150px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+        }
+        .card h3 {
+            margin: 12px 0 5px;
+            color: #d81b60;
+        }
+        .card .price {
+            color: #555;
+            font-size: 18px;
+        }
+        .category-title {
+            color: #d81b60;
+            font-size: 32px;
+            margin-top: 60px;
+            border-bottom: 2px solid #f8bbd0;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        .contact {
+            background: white;
+            max-width: 500px;
+            margin: 70px auto 0;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .contact p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 12px 30px;
+            border-radius: 30px;
+            margin-top: 15px;
+        }
+        .whatsapp-btn:hover {
+            background: #1da851;
+        }
+    </style>
+</head>
+<body>
+    <h1>بەخێربێن بۆ دووکانی گوڵ</h1>
+    <p>جوانترین گوڵەکان بۆ هەموو بۆنەیەک</p>
+
+    <h2 class="category-title">دەستە گوڵ</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="flower-img">🌹</div>
+            <h3>دەستە گوڵی سووری</h3>
+            <p class="price">٢٥,٠٠٠ دینار</p>
+        </div>
+        <div class="card">
+            <div class="flower-img">🌷</div>
+            <h3>دەستە گوڵی لاڵە</h3>
+            <p class="price">٢٠,٠٠٠ دینار</p>
+        </div>
+        <div class="card">
+            <div class="flower-img">🌻</div>
+            <h3>دەستە گوڵی ڕۆژهەڵتەپەرەست</h3>
+            <p class="price">١٥,٠٠٠ دینار</p>
+        </div>
+    </div>
+
+    <h2 class="category-title">گوڵی ژن هێنان</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="flower-img">💐</div>
+            <h3>دەستە گوڵی بووک</h3>
+            <p class="price">٥٠,٠٠٠ دینار</p>
+        </div>
+        <div class="card">
+            <div class="flower-img">🌸</div>
+            <h3>ڕازاندنەوەی ماشێن</h3>
+            <p class="price">٧٥,٠٠٠ دینار</p>
+        </div>
+    </div>
+
+    <h2 class="category-title">دیاری</h2>
+    <div class="cards">
+        <div class="card">
+            <div class="flower-img">🍫</div>
+            <h3>چۆکلێت</h3>
+            <p class="price">١٠,٠٠٠ دینار</p>
+        </div>
+        <div class="card">
+            <div class="flower-img">🎈</div>
+            <h3>بالۆن</h3>
+            <p class="price">٥,٠٠٠ دینار</p>
+        </div>
+    </div>
+
+    <div class="contact">
+        <h2 style="color:#d81b60;">پەیوەندیمان پێوە بکە</h2>
+        <p>📍 هەولێر، شەقامی ٦٠ مەتری</p>
+        <p>📞 0750 000 0000</p>
+        <p>🕘 هەموو ڕۆژێک: ٩ی بەیانی تا ١٠ی شەو</p>
+        <a class="whatsapp-btn" href="https://wa.me/9647500000000" target="_blank">داواکاری بە واتسئاپ</a>
+    </div>
+</body>
+</html>
