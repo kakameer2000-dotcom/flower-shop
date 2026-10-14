@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دووکانی گوڵ</title>
+<title>Meer's Flower</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -132,7 +132,7 @@ nav a:hover { background: var(--green); color: #fff; }
 
 <header>
   <div class="bar">
-    <a class="logo" href="#top">🌸 دووکانی گوڵ</a>
+    <a class="logo" href="#top">🌸 Meer's Flower</a>
     <nav>
       <a href="#menu">مینیۆ</a>
       <a href="#contact">پەیوەندی</a>
@@ -167,7 +167,7 @@ nav a:hover { background: var(--green); color: #fff; }
     .about-text { max-width: 640px; margin-top: 12px; font-size: 18px; }
   </style>
   <div class="section-head"><h2>دەربارەی ئێمە</h2></div>
-  <p class="about-text">دووکانی گوڵ لە هەولێر گوڵی تازە ئامادە دەکات بۆ هەموو بۆنەیەک: ڕۆژی لەدایکبوون، ژن هێنان و دیاری. هەموو ڕۆژێک گوڵەکان تازە دەکرێنەوە و بە جوانترین شێوە ڕێک دەخرێن. داواکارییەکەت بنێرە، ئێمە ئامادەی دەکەین.</p>
+  <p class="about-text">Meer's Flower لە هەولێر گوڵی تازە ئامادە دەکات بۆ هەموو بۆنەیەک: ڕۆژی لەدایکبوون، ژن هێنان و دیاری. هەموو ڕۆژێک گوڵەکان تازە دەکرێنەوە و بە جوانترین شێوە ڕێک دەخرێن. داواکارییەکەت بنێرە، ئێمە ئامادەی دەکەین.</p>
 </section>
   <section id="contact">
     <div class="section-head"><h2>پەیوەندیمان پێوە بکە</h2></div>
@@ -183,25 +183,43 @@ nav a:hover { background: var(--green); color: #fff; }
 </div>
     </div>
   </section>
+<section id="map" style="padding-top: 30px;">
+  <style>
+    .map-box { border-radius: 18px; overflow: hidden; border: 1px solid #eadde0; }
+    .map-box iframe { width: 100%; height: 360px; border: 0; display: block; }
+    .map-link { margin-top: 16px; text-align: center; }
+  </style>
+  <div class="map-box">
+    <iframe src="https://www.google.com/maps?q=60+Meter+Street+Erbil&output=embed" loading="lazy" title="شوێنی دووکان" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <div class="map-link"><a class="btn btn-rose" href="https://www.google.com/maps/search/?api=1&query=60+Meter+Street+Erbil" target="_blank" rel="noopener">کردنەوە لە Google Maps</a></div>
+</section>
 </main>
 
-<footer>© دووکانی گوڵ، هەولێر</footer>
+<footer>© Meer's Flower، هەولێر</footer>
 
 <script>
 // ===== ئەمانە دەگۆڕدرێن بۆ دووکانە ڕاستەقینەکە =====
 // ژمارەی واتسئاپ: کۆدی وڵات + ژمارە، بێ سفر و بێ بۆشایی
-const WHATSAPP = "9647500000000";
+const WHATSAPP = "9647507415577";
 
 // گوڵەکان: ناو، نرخ، پۆل، ئیمۆجی، وێنە
 // وێنەکان لە فۆڵدەری images دابنێ. ئەگەر وێنەکە نەبوو، ئیمۆجییەکە پیشان دەدرێت
 const items = [
-  { name: "دەستە گوڵی سووری",        price: "٢٥,٠٠٠", cat: "دەستە گوڵ",     icon: "🌹", img: "images/red-roses.jpg" },
-  { name: "دەستە گوڵی لاڵە",         price: "٢٠,٠٠٠", cat: "دەستە گوڵ",     icon: "🌷", img: "images/tulips.jpg" },
-  { name: "دەستە گوڵی ڕۆژهەڵتەپەرەست", price: "١٥,٠٠٠", cat: "دەستە گوڵ",     icon: "🌻", img: "images/sunflowers.jpg" },
-  { name: "دەستە گوڵی بووک",         price: "٥٠,٠٠٠", cat: "گوڵی ژن هێنان", icon: "💐", img: "images/bridal-bouquet.jpg" },
-  { name: "ڕازاندنەوەی ماشێن",       price: "٧٥,٠٠٠", cat: "گوڵی ژن هێنان", icon: "🌸", img: "images/car-flowers.jpg" },
-  { name: "چۆکلێت",                  price: "١٠,٠٠٠", cat: "دیاری",         icon: "🍫", img: "images/chocolate.jpg" },
-  { name: "بالۆن",                   price: "٥,٠٠٠",  cat: "دیاری",         icon: "🎈", img: "images/balloons.jpg" }
+      { name: "Red Rose Bouquet",     price: "25,000", cat: "Bouquets", icon: "🌹", img: "images/red-roses.jpg" },
+  { name: "Tulip Bouquet",        price: "20,000", cat: "Bouquets", icon: "🌷", img: "images/tulips.jpg" },
+  { name: "Sunflower Bouquet",    price: "15,000", cat: "Bouquets", icon: "🌻", img: "images/sunflowers.jpg" },
+  { name: "Pink Bouquet",         price: "30,000", cat: "Bouquets", icon: "🌺", img: "images/pink-bouquet.jpg" },
+  { name: "Yellow Bouquet",       price: "22,000", cat: "Bouquets", icon: "🌼", img: "images/yellow-bouquet.jpg" },
+  { name: "Bridal Bouquet",       price: "50,000", cat: "Wedding",  icon: "💐", img: "images/bridal-bouquet.jpg" },
+  { name: "Wedding Car Flowers",  price: "75,000", cat: "Wedding",  icon: "🌸", img: "images/car-flowers.jpg" },
+  { name: "White Wedding Flowers",price: "60,000", cat: "Wedding",  icon: "💮", img: "images/white-wedding.jpg" },
+  { name: "House Plant",          price: "25,000", cat: "Plants",   icon: "🪴", img: "images/house-plant.jpg" },
+  { name: "Cactus",               price: "10,000", cat: "Plants",   icon: "🌵", img: "images/cactus.jpg" },
+  { name: "Chocolate",            price: "10,000", cat: "Gifts",    icon: "🍫", img: "images/chocolate.jpg" },
+  { name: "Balloons",             price: "5,000",  cat: "Gifts",    icon: "🎈", img: "images/balloons.jpg" },
+  { name: "Teddy Bear",           price: "20,000", cat: "Gifts",    icon: "🧸", img: "images/teddy.jpg" },
+  { name: "Gift Box",             price: "40,000", cat: "Gifts",    icon: "🎁", img: "images/gift-box.jpg" }
 ];
 // =================================================
 
@@ -218,7 +236,7 @@ function show(cat) {
       <div class="pic">${i.img ? `<img src="${i.img}" alt="${i.name}" loading="lazy" onerror="this.parentNode.textContent='${i.icon}'">` : i.icon}</div>
       <div class="body">
         <h3>${i.name}</h3>
-        <span class="price">${i.price} دینار</span>
+        <span class="price">${i.price} IQD</span>
         <a class="order" target="_blank" rel="noopener"
            href="${waLink("سڵاو، دەمەوێت داوا بکەم: " + i.name)}">داوا بکە</a>
       </div>
@@ -241,5 +259,211 @@ show("هەموو");
 </style>
 <a class="float-wa" id="float-wa" href="#" target="_blank" rel="noopener" aria-label="واتسئاپ"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
 <script>document.getElementById("float-wa").href = waLink();</script>
+<style>
+/* ئەنیمەیشن */
+.reveal { opacity: 0; transform: translateY(26px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+.card { transition: box-shadow .25s, transform .6s ease, opacity .6s ease; }
+.card.visible:hover { transform: translateY(-6px); box-shadow: 0 10px 24px rgba(0,0,0,.12); }
+.hero h1, .hero p, .hero .btn { animation: rise .8s ease both; }
+.hero p { animation-delay: .15s; }
+.hero .btn { animation-delay: .3s; }
+@keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .hero h1, .hero p, .hero .btn { animation: none; transition: none; opacity: 1; transform: none; }
+}
+/* سەبەتە */
+.add-btn { margin-top: 12px; width: 100%; padding: 9px; border: 0; border-radius: 8px; background: var(--green-soft); color: var(--green); font: inherit; font-weight: 700; cursor: pointer; }
+.add-btn:hover { background: var(--green); color: #fff; }
+.cart-fab { position: fixed; bottom: 20px; right: 20px; z-index: 20; background: var(--green); color: #fff; border: 0; border-radius: 999px; padding: 14px 22px; font: inherit; font-weight: 700; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+.cart-panel { position: fixed; top: 0; bottom: 0; left: 0; width: min(380px, 100%); background: #fff; z-index: 30; transform: translateX(-100%); transition: transform .3s; display: flex; flex-direction: column; box-shadow: 4px 0 24px rgba(0,0,0,.2); }
+.cart-panel.open { transform: none; }
+.cp-head { display: flex; justify-content: space-between; align-items: center; padding: 18px 20px; border-bottom: 1px solid #eadde0; font-size: 18px; color: var(--green); }
+.cp-close { border: 0; background: none; font-size: 20px; cursor: pointer; }
+.cp-list { flex: 1; overflow-y: auto; padding: 10px 20px; }
+.cp-item { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 0; border-bottom: 1px solid #f0e6e8; }
+.cp-qty { display: flex; align-items: center; gap: 10px; }
+.cp-qty button { width: 30px; height: 30px; border-radius: 50%; border: 1.5px solid var(--green); background: #fff; color: var(--green); font-size: 18px; cursor: pointer; }
+.cp-empty { color: var(--muted); text-align: center; margin-top: 30px; font-size: 17px; }
+.cp-foot { padding: 18px 20px; border-top: 1px solid #eadde0; }
+.cp-total { font-weight: 800; font-size: 18px; margin-bottom: 12px; color: var(--green); }
+.cp-send { display: block; text-align: center; }
+</style>
+<script>
+(function () {
+  const cart = window.cart = {};
+  const digits = "٠١٢٣٤٥٦٧٨٩";
+  const toNum = t => Number(t.replace(/[٠-٩]/g, d => digits.indexOf(d)).replace(/[^\d]/g, ""));
+  const fmt = n => n.toLocaleString("en-US");
+
+  // دوگمە و پانێڵی سەبەتە
+  const fab = document.createElement("button");
+  fab.className = "cart-fab";
+  document.body.appendChild(fab);
+  const panel = document.createElement("div");
+  panel.className = "cart-panel";
+  panel.innerHTML = '<div class="cp-head"><strong>سەبەتەی کڕین</strong><button class="cp-close" aria-label="داخستن">✕</button></div>' +
+    '<div class="cp-list"></div>' +
+    '<div class="cp-foot"><div class="cp-total"></div><a class="btn btn-rose cp-send" target="_blank" rel="noopener">ناردن بە واتسئاپ</a></div>';
+  document.body.appendChild(panel);
+  const list = panel.querySelector(".cp-list");
+  const totalEl = panel.querySelector(".cp-total");
+  const send = panel.querySelector(".cp-send");
+
+  function render() {
+    const names = Object.keys(cart);
+    const count = names.reduce((s, n) => s + cart[n].qty, 0);
+    const total = names.reduce((s, n) => s + cart[n].qty * cart[n].price, 0);
+    fab.textContent = "🛒 سەبەتە (" + fmt(count) + ")";
+    list.innerHTML = names.length ? names.map(n =>
+      '<div class="cp-item"><div><b>' + n + '</b><br><small>' + fmt(cart[n].price) + ' IQD</small></div>' +
+      '<div class="cp-qty"><button data-n="' + n + '" data-d="-1">−</button><span>' + fmt(cart[n].qty) + '</span><button data-n="' + n + '" data-d="1">+</button></div></div>'
+    ).join("") : '<p class="cp-empty">سەبەتەکە بەتاڵە</p>';
+    totalEl.textContent = "کۆی گشتی: " + fmt(total) + " IQD";
+    const msg = "سڵاو، دەمەوێت ئەمانە داوا بکەم:\n" +
+      names.map(n => "- " + n + " × " + cart[n].qty).join("\n") +
+      "\nکۆی گشتی: " + total.toLocaleString("en-US") + " IQD";
+    send.href = names.length ? waLink(msg) : "#";
+  }
+  list.addEventListener("click", e => {
+    const b = e.target.closest("button[data-n]");
+    if (!b) return;
+    const item = cart[b.dataset.n];
+    item.qty += Number(b.dataset.d);
+    if (item.qty <= 0) delete cart[b.dataset.n];
+    render();
+  });
+  fab.onclick = () => panel.classList.toggle("open");
+  panel.querySelector(".cp-close").onclick = () => panel.classList.remove("open");
+
+  // ئەنیمەیشنی دەرکەوتن
+  const io = "IntersectionObserver" in window
+    ? new IntersectionObserver(es => es.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target); }
+      }), { threshold: 0.12 })
+    : null;
+  function reveal(el) {
+    el.classList.add("reveal");
+    if (io) io.observe(el); else el.classList.add("visible");
+  }
+
+  // گۆڕینی کارتەکان: دوگمەی «زیاد بکە بۆ سەبەتە»
+  function decorate() {
+    document.querySelectorAll("#grid .card").forEach(card => {
+      const name = card.querySelector("h3").textContent;
+      const price = toNum(card.querySelector(".price").textContent);
+      const old = card.querySelector(".order");
+      if (old) {
+        const b = document.createElement("button");
+        b.className = "add-btn";
+        b.textContent = "زیاد بکە بۆ سەبەتە";
+        b.onclick = () => {
+          cart[name] = cart[name] || { price: price, qty: 0 };
+          cart[name].qty++;
+          render();
+          b.textContent = "زیادکرا ✓";
+          setTimeout(() => { b.textContent = "زیاد بکە بۆ سەبەتە"; }, 1200);
+        };
+        old.replaceWith(b);
+      }
+      reveal(card);
+    });
+  }
+  const baseShow = show;
+  show = function (cat) { baseShow(cat); decorate(); };
+
+  document.querySelectorAll(".section-head, .about-text, .contact").forEach(reveal);
+  decorate();
+  render();
+})();
+</script>
+<style>
+.cart-panel { overflow-y: auto; }
+.cp-list { flex: none; min-height: 110px; max-height: 28vh; }
+.cp-form { padding: 14px 20px; border-top: 1px solid #eadde0; display: grid; gap: 8px; }
+.cp-form input:not([type=radio]) { width: 100%; padding: 9px 12px; border: 1px solid #d9c9cd; border-radius: 8px; font: inherit; font-size: 15px; }
+.cp-mode { display: flex; flex-wrap: wrap; gap: 14px; font-size: 15px; }
+.cp-fee { font-size: 15px; color: var(--muted); margin-bottom: 4px; }
+.del-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 26px; }
+.del-card { background: #fff; border: 1px solid #eadde0; border-radius: 14px; padding: 22px; }
+.del-card .ico { font-size: 34px; }
+.del-card h3 { color: var(--green); margin: 8px 0 4px; font-size: 18px; }
+.del-card p { font-size: 16px; color: var(--muted); }
+</style>
+<script>
+(function () {
+  if (!window.cart) { console.warn("cart نەدۆزرایەوە"); return; }
+  const FEE = 3000; // نرخی گەیاندن (دەتوانیت بیگۆڕیت)
+  const digits = "٠١٢٣٤٥٦٧٨٩";
+  const fmt = n => n.toLocaleString("en-US");
+  const card = (ico, h, p) => '<div class="del-card"><div class="ico">' + ico + '</div><h3>' + h + '</h3><p>' + p + '</p></div>';
+
+  // بەشی زانیاری گەیاندن
+  document.getElementById("about").insertAdjacentHTML("beforebegin",
+    '<section id="delivery"><div class="section-head"><h2>گەیاندن بۆ ماڵ</h2><p>گوڵەکانت دەگەیەنین بۆ هەر شوێنێک لە شارەکە.</p></div><div class="del-grid">' +
+    card("🚚", "نرخی گەیاندن", fmt(FEE) + " IQD") +
+    card("📍", "شوێنەکان", "هەموو شاری هەولێر") +
+    card("🕘", "کاتی گەیاندن", "٩ی بەیانی تا ٩ی شەو، لە ماوەی کاتژمێرێک") +
+    '</div></section>');
+
+  // فۆرمی گەیاندن لە سەبەتەکە
+  const panel = document.querySelector(".cart-panel");
+  const foot = panel.querySelector(".cp-foot");
+  const totalEl = panel.querySelector(".cp-total");
+  const send = panel.querySelector(".cp-send");
+  const form = document.createElement("div");
+  form.className = "cp-form";
+  form.innerHTML =
+    '<div class="cp-mode"><label><input type="radio" name="mode" value="delivery" checked> گەیاندن بۆ ماڵ</label>' +
+    '<label><input type="radio" name="mode" value="pickup"> وەرگرتن لە دووکان</label></div>' +
+    '<input id="f-name" placeholder="ناوت">' +
+    '<input id="f-phone" type="tel" placeholder="ژمارەی تەلەفۆن">' +
+    '<input id="f-addr" placeholder="ناونیشان (گەڕەک، شەقام، نزیک...)">' +
+    '<input id="f-time" placeholder="کات (بۆ نموونە ئەمڕۆ ٥ی ئێوارە)">';
+  foot.before(form);
+  const feeEl = document.createElement("div");
+  feeEl.className = "cp-fee";
+  foot.prepend(feeEl);
+
+  const mode = () => panel.querySelector('input[name="mode"]:checked').value;
+  const sub = () => Object.values(window.cart).reduce((s, i) => s + i.qty * i.price, 0);
+  const v = id => form.querySelector(id).value.trim();
+
+  function refresh() {
+    const d = mode() === "delivery";
+    form.querySelector("#f-addr").style.display = d ? "" : "none";
+    const s = sub();
+    feeEl.textContent = d ? "نرخی گەیاندن: " + fmt(FEE) + " IQD" : "";
+    totalEl.textContent = "کۆی گشتی: " + fmt(s + (d && s ? FEE : 0)) + " IQD";
+  }
+  new MutationObserver(refresh).observe(panel.querySelector(".cp-list"), { childList: true });
+  form.addEventListener("change", refresh);
+  refresh();
+
+  // ناردن بە واتسئاپ
+  send.addEventListener("click", function (e) {
+    const names = Object.keys(window.cart);
+    if (!names.length) { e.preventDefault(); return; }
+    const d = mode() === "delivery";
+    if (!v("#f-name") || !v("#f-phone") || (d && !v("#f-addr"))) {
+      e.preventDefault();
+      alert("تکایە ناو و ژمارەی تەلەفۆن" + (d ? " و ناونیشان" : "") + " بنووسە");
+      return;
+    }
+    const s = sub();
+    const total = s + (d ? FEE : 0);
+    let msg = "سڵاو، دەمەوێت ئەمانە داوا بکەم:\n" +
+      names.map(n => "- " + n + " × " + window.cart[n].qty).join("\n") +
+      "\n\nجۆر: " + (d ? "گەیاندن بۆ ماڵ" : "وەرگرتن لە دووکان") +
+      "\nناو: " + v("#f-name") + "\nتەلەفۆن: " + v("#f-phone");
+    if (d) msg += "\nناونیشان: " + v("#f-addr");
+    if (v("#f-time")) msg += "\nکات: " + v("#f-time");
+    msg += "\n\nکۆی شتەکان: " + s.toLocaleString("en-US") + " IQD" +
+      (d ? "\nنرخی گەیاندن: " + FEE.toLocaleString("en-US") + " IQD" : "") +
+      "\nکۆی گشتی: " + total.toLocaleString("en-US") + " IQD";
+    send.href = waLink(msg);
+  });
+})();
+</script>
 </body>
 </html>
